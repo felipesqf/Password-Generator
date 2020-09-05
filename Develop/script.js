@@ -18,7 +18,6 @@ function generatePassword(){
   var concatenatedArray = [];
   var newPassword = [];
 
-
   if ((passwordLength < 8) || 
       (passwordLength > 128) || 
       (typeof passwordLength != "number")){
@@ -42,14 +41,13 @@ function generatePassword(){
   if(numbersConfirm == true){
     concatenatedArray = concatenatedArray.concat(numericCharacters);
   };
-debugger;
-
+  debugger;
 for (var i = 0; passwordLength > newPassword.length; i++){
-// do{ 
-  newPassword[i] = concatenatedArray[Math.floor(Math.random()*concatenatedArray.length)];
-    console.log(newPassword);}
-// while
-//     (passwordLength > newPassword.length);
+  newPassword[i] = concatenatedArray[Math.floor(Math.random()*concatenatedArray.length)];}
+  password = newPassword.join('');
+  console.log(newPassword);
+  console.log(password);
+  return password;
 }
   
 // Add event listener to generate button
