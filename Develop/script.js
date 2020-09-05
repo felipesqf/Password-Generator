@@ -18,9 +18,7 @@ function generatePassword(){
   var concatenatedArray = [];
   var newPassword = [];
 
-  if ((passwordLength < 8) || 
-      (passwordLength > 128) || 
-      (typeof passwordLength != "number")){
+  if ((passwordLength < 8) || (passwordLength > 128) || (typeof passwordLength != "number")){
     alert("You must choose between 8 and 128 characters. Please enter numbers only");}
   else{ 
     var capitalLetterConfirm = confirm("Do you want to include Capital Letters?");
@@ -29,27 +27,25 @@ function generatePassword(){
     var numbersConfirm = confirm("Do you wanna include Numbers?");
   };
 
+  function joinArrays(collection){
+    concatenatedArray = concatenatedArray.concat(collection);};
+
   if(capitalLetterConfirm == true){
-    concatenatedArray = concatenatedArray.concat(upperCasedCharacters);
-  };
+    joinArrays(upperCasedCharacters);};
+
   if(lowerCaseLetterConfirm == true){
-    concatenatedArray = concatenatedArray.concat(lowerCasedCharacters);
-  };
+    joinArrays(lowerCasedCharacters);};
+
   if(specialCharactersConfirm == true){
-    concatenatedArray = concatenatedArray.concat(specialCharacters);
-  };
+    joinArrays(specialCharacters);};
+
   if(numbersConfirm == true){
-    concatenatedArray = concatenatedArray.concat(numericCharacters);
-  };
-  debugger;
+    joinArrays(numericCharacters);};
+
 for (var i = 0; passwordLength > newPassword.length; i++){
   newPassword[i] = concatenatedArray[Math.floor(Math.random()*concatenatedArray.length)];}
-  password = newPassword.join('');
-  console.log(newPassword);
-  console.log(password);
-  return password;
-}
-  
-// Add event listener to generate button
 
+return password = newPassword.join('');
+}
+// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
