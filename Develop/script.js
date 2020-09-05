@@ -9,8 +9,7 @@ var upperCasedCharacters = ['A','B','C','D','E','F','G','H','I','J','K','L','M',
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  passwordText.value = password;
-}
+  passwordText.value = password;}
 
 function generatePassword(){
   var howMany = prompt("how many characters?");
@@ -25,7 +24,8 @@ function generatePassword(){
     var lowerCaseLetterConfirm = confirm("Do you want to include Lower Case Letters?");
     var specialCharactersConfirm = confirm("Do you wanna include Special Characters?");
     var numbersConfirm = confirm("Do you wanna include Numbers?");
-  };
+        if ((capitalLetterConfirm == false) && (lowerCaseLetterConfirm == false) && (specialCharactersConfirm == false) && (numbersConfirm == false)){
+            alert("You must select at least one option");}};
 
   function joinArrays(collection){
     concatenatedArray = concatenatedArray.concat(collection);};
