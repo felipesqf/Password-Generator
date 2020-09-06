@@ -31,11 +31,11 @@ THEN the password is either displayed in an alert or written to the page<br>
 * [Terminal](https://gitforwindows.org/) - Git terminal
 ​
 #### Final Interface
-​![screenshot1](https://github.com/felipesqf/Password-Generator/blob/master/images/pic01.JPG) 
-![screenshot1](https://github.com/felipesqf/Password-Generator/blob/master/images/pic02.JPG) 
-​![screenshot1](https://github.com/felipesqf/Password-Generator/blob/master/images/pic03.JPG) 
-![screenshot1](https://github.com/felipesqf/Password-Generator/blob/master/images/pic04.JPG) 
-![screenshot1](https://github.com/felipesqf/Password-Generator/blob/master/images/pic05.JPG) 
+​![screenshot1](https://github.com/felipesqf/Password-Generator/blob/master/images/pic01.PNG) 
+![screenshot1](https://github.com/felipesqf/Password-Generator/blob/master/images/pic02.PNG) 
+​![screenshot1](https://github.com/felipesqf/Password-Generator/blob/master/images/pic03.PNG) 
+![screenshot1](https://github.com/felipesqf/Password-Generator/blob/master/images/pic04.PNG) 
+![screenshot1](https://github.com/felipesqf/Password-Generator/blob/master/images/pic05.PNG) 
 
 ### Licence
 N/A.
