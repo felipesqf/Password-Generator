@@ -41,7 +41,7 @@ THEN the password is either displayed in an alert or written to the page<br>
 N/A.
 ​
 ### Link to the Website
-<a href="https://felipesqf.github.io/Password-Generator/">Link to the Horiseon website</a>
+<a href="https://felipesqf.github.io/Password-Generator/">Link to the Password Generator application</a>
 
 ## Authors
 Felipe Ferreira  <br><br>
