@@ -18,29 +18,29 @@ function generatePassword(){
   var newPassword = [];
 
   if ((passwordLength < 8) || (passwordLength > 128) || (typeof passwordLength != "number")){
-    alert("You must choose between 8 and 128 characters. Please enter numbers only");}
+    alert("You must choose between 8 and 128 characters. Please enter numbers only")}
   else{ 
-    var capitalLetterConfirm = confirm("Do you want to include Capital Letters?");
-    var lowerCaseLetterConfirm = confirm("Do you want to include Lower Case Letters?");
-    var specialCharactersConfirm = confirm("Do you wanna include Special Characters?");
-    var numbersConfirm = confirm("Do you wanna include Numbers?");
+    var capitalLetterConfirm = confirm("Do you want to include Capital Letters?")
+    var lowerCaseLetterConfirm = confirm("Do you want to include Lower Case Letters?")
+    var specialCharactersConfirm = confirm("Do you wanna include Special Characters?")
+    var numbersConfirm = confirm("Do you wanna include Numbers?")
         if ((capitalLetterConfirm == false) && (lowerCaseLetterConfirm == false) && (specialCharactersConfirm == false) && (numbersConfirm == false)){
-            alert("You must select at least one option");}};
+            alert("You must select at least one option")}};
 
   function joinArrays(collection){
-    concatenatedArray = concatenatedArray.concat(collection);};
+    concatenatedArray = concatenatedArray.concat(collection)};
 
   if(capitalLetterConfirm == true){
-    joinArrays(upperCasedCharacters);};
+    joinArrays(upperCasedCharacters)};
 
   if(lowerCaseLetterConfirm == true){
-    joinArrays(lowerCasedCharacters);};
+    joinArrays(lowerCasedCharacters)};
 
   if(specialCharactersConfirm == true){
-    joinArrays(specialCharacters);};
+    joinArrays(specialCharacters)};
 
   if(numbersConfirm == true){
-    joinArrays(numericCharacters);};
+    joinArrays(numericCharacters)};
 
 for (var i = 0; passwordLength > newPassword.length; i++){
   newPassword[i] = concatenatedArray[Math.floor(Math.random()*concatenatedArray.length)];}
